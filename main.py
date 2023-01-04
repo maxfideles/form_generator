@@ -416,17 +416,17 @@ while True:
 
         #Opening Outlook
         const=win32com.client.constants
-       	olMailItem = 0x0
-       	obj = win32com.client.Dispatch("Outlook.Application")
-       	newMail = obj.CreateItem(olMailItem)
-       	newMail.Subject = f"{values['FIRSTNAMEBC']}- Booking Confirmation"
-       	newMail.Body = "Hello " f"{values['FIRSTNAMEBC']}"',\n \nWe are sending attached on this email your Booking Confirmation letter . \n \n Yours sincerely,\n \n 'f"{values['RECEPTIONISTBC']}"' \n The Hotel'
-       	newMail.BodyFormat = 2
-       	newMail.To = f"{values['EMAILBC']}"
-       	attachment1 = r"%s\new\%s" %(os.getcwd(),f"{values['FIRSTNAMEBC']}-Booking Confirmation.pdf")
-       	newMail.Attachments.Add(attachment1)
-       	newMail.display(True)
-        
+        olMailItem = 0x0
+        obj = win32com.client.Dispatch("Outlook.Application")
+        newMail = obj.CreateItem(olMailItem)
+        newMail.Subject = f"{values['FIRSTNAMEBC']}- Booking Confirmation"
+        newMail.Body = "Hello " f"{values['FIRSTNAMEBC']}"',\n \nWe are sending attached on this email your Booking Confirmation letter . \n \n Yours sincerely,\n \n 'f"{values['RECEPTIONISTBC']}"' \n The Hotel'
+        newMail.BodyFormat = 2
+        newMail.To = f"{values['EMAILBC']}"
+        attachment1 = r"%s\new\%s" %(os.getcwd(),f"{values['FIRSTNAMEBC']}-Booking Confirmation.pdf")
+        newMail.Attachments.Add(attachment1)
+        newMail.display(True)
+
 
 
 
@@ -501,17 +501,17 @@ while True:
         convert("new\%s"% f"{values['FIRSTNAMEPB']}-Provisional Booking.docx","new\%s"% f"{values['FIRSTNAMEPB']}-Provisional Booking.pdf")
         
         #Opening Outlook
-       	const=win32com.client.constants
-       	olMailItem = 0x0
-       	obj = win32com.client.Dispatch("Outlook.Application")
-       	newMail = obj.CreateItem(olMailItem)
-       	newMail.Subject = f"{values['FIRSTNAMEPB']}- Provisional Booking"
-       	newMail.Body = "Hello " f"{values['FIRSTNAMEPB']}"',\n \nWe are sending attached on this email your Provisional Booking letter . \n \n Yours sincerely,\n \n 'f"{values['RECEPTIONISTPB']}"' \n The Hotel'
-       	newMail.BodyFormat = 2
-       	newMail.To = f"{values['EMAILPB']}"
-       	attachment1 = r"%s\new\%s" %(os.getcwd(),f"{values['FIRSTNAMEPB']}-Provisional Booking.pdf")
-       	newMail.Attachments.Add(attachment1)
-       	newMail.display(True)
+        const=win32com.client.constants
+        olMailItem = 0x0
+        obj = win32com.client.Dispatch("Outlook.Application")
+        newMail = obj.CreateItem(olMailItem)
+        newMail.Subject = f"{values['FIRSTNAMEPB']}- Provisional Booking"
+        newMail.Body = "Hello " f"{values['FIRSTNAMEPB']}"',\n \nWe are sending attached on this email your Provisional Booking letter . \n \n Yours sincerely,\n \n 'f"{values['RECEPTIONISTPB']}"' \n The Hotel'
+        newMail.BodyFormat = 2
+        newMail.To = f"{values['EMAILPB']}"
+        attachment1 = r"%s\new\%s" %(os.getcwd(),f"{values['FIRSTNAMEPB']}-Provisional Booking.pdf")
+        newMail.Attachments.Add(attachment1)
+        newMail.display(True)
 
 
     if event == "CreateCBC":
@@ -540,19 +540,17 @@ while True:
         convert("new\%s"% f"{values['CBCFN']}-Campbed Booking Confirmation.docx","new\%s"% f"{values['CBCFN']}-Campbed Booking Confirmation.pdf")
 
         #Opening Outlook
-       	const=win32com.client.constants
-       	olMailItem = 0x0
-       	obj = win32com.client.Dispatch("Outlook.Application")
-       	newMail = obj.CreateItem(olMailItem)
-       	newMail.Subject = f"{values['CBCFN']}-Campbed Booking Confirmation"
-       	newMail.Body = "Hello " f"{values['CBCFN']}"',\n \nWe are sending attached on this email your Campbed Booking Confirmation letter . \n \n Yours sincerely,\n \n 'f"{values['CBCRECEPTIONIST']}"' \n The Hotel'
-       	newMail.BodyFormat = 2
-       	newMail.To = f"{values['CBCEMAIL']}"
-       	attachment1 = r"%s\new\%s" %(os.getcwd(),f"{values['CBCFN']}-Campbed Booking Confirmation.pdf")
-       	newMail.Attachments.Add(attachment1)
-       	newMail.display(True)
+        const=win32com.client.constants
+        olMailItem = 0x0
+        obj = win32com.client.Dispatch("Outlook.Application")
+        newMail = obj.CreateItem(olMailItem)
+        newMail.Subject = f"{values['CBCFN']}-Campbed Booking Confirmation"
+        newMail.Body = "Hello " f"{values['CBCFN']}"',\n \nWe are sending attached on this email your Campbed Booking Confirmation letter . \n \n Yours sincerely,\n \n 'f"{values['CBCRECEPTIONIST']}"' \n The Hotel'
+        newMail.BodyFormat = 2
+        newMail.To = f"{values['CBCEMAIL']}"
+        attachment1 = r"%s\new\%s" %(os.getcwd(),f"{values['CBCFN']}-Campbed Booking Confirmation.pdf")
+        newMail.Attachments.Add(attachment1)
+        newMail.display(True)
            
-
-
 
 window.close()
