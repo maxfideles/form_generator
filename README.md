@@ -1,6 +1,6 @@
 # Form Generator
 
-The software was developed to improve the creation of forms for an accomodation for international students accommodation based in London. The code was initially taken as an example from the 'Code is fun’ channel’s [video](https://youtu.be/fziZXbeaegc), and adapted to the needs of the accommodation.
+The software was developed to improve the creation of forms in an accomodation for international students based in London. The code was initially taken as an example from the 'Code is fun’ channel’s [video](https://youtu.be/fziZXbeaegc), and adapted to the needs of the accommodation.
 
 Using this form generator you can create new document files from templates and save them in a different folder, in this case, it will save the new documents in the folder called new.
 
